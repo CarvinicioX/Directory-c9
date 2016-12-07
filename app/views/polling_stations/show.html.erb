@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sub sector:</strong>
+  <%= @polling_station.sub_sector %>
+</p>
+
+<p>
+  <strong>Num pollstat:</strong>
+  <%= @polling_station.num_pollstat %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @polling_station.name %>
+</p>
+
+<%= link_to 'Edit', edit_polling_station_path(@polling_station) %> |
+<%= link_to 'Back', polling_stations_path %>

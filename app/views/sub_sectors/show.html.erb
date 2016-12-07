@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sector:</strong>
+  <%= @sub_sector.sector %>
+</p>
+
+<p>
+  <strong>Num sub sector:</strong>
+  <%= @sub_sector.num_sub_sector %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sub_sector.name %>
+</p>
+
+<%= link_to 'Edit', edit_sub_sector_path(@sub_sector) %> |
+<%= link_to 'Back', sub_sectors_path %>

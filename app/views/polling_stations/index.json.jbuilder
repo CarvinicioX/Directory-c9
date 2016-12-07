@@ -1,0 +1,1 @@
+json.array! @polling_stations, partial: 'polling_stations/polling_station', as: :polling_station

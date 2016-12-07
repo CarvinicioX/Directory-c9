@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Polling station</th>
+      <th>Num mer</th>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mers.each do |mer| %>
+      <tr>
+        <td><%= mer.polling_station %></td>
+        <td><%= mer.num_mer %></td>
+        <td><%= mer.name %></td>
+        <td><%= link_to 'Show', mer %></td>
+        <td><%= link_to 'Edit', edit_mer_path(mer) %></td>
+        <td><%= link_to 'Destroy', mer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mer', new_mer_path %>

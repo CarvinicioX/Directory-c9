@@ -1,0 +1,1 @@
+json.array! @mers, partial: 'mers/mer', as: :mer

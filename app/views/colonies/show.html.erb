@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Polling station:</strong>
+  <%= @colony.polling_station %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @colony.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @colony.description %>
+</p>
+
+<%= link_to 'Edit', edit_colony_path(@colony) %> |
+<%= link_to 'Back', colonies_path %>

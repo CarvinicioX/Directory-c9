@@ -1,0 +1,1 @@
+json.partial! "sub_sectors/sub_sector", sub_sector: @sub_sector

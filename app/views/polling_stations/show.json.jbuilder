@@ -1,0 +1,1 @@
+json.partial! "polling_stations/polling_station", polling_station: @polling_station

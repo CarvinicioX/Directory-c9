@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sectors de <%= Municipality.find(params[:municipality]).name %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Sector</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sectors.where(municipality: params[:municipality]).each do |sector| %>
+    <!--% @sectors.each do |sector| %-->
+      <tr>
+        <td><%= sector.num_sector %></td>
+        <td><%= sector.name %></td>
+        <td><%= link_to 'Mostrar', sector %></td>
+        <td><%= link_to 'Modificar', edit_sector_path(sector) %></td>
+        <td><%= link_to 'Eliminar', sector, method: :delete, data: { confirm: 'Esta Seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sector', new_sector_path %>

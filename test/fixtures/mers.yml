@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  polling_station: one
+  num_mer: MyString
+  name: MyString
+
+two:
+  polling_station: two
+  num_mer: MyString
+  name: MyString

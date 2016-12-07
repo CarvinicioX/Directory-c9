@@ -1,0 +1,32 @@
+<%= form_for(polling_station) do |f| %>
+  <% if polling_station.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(polling_station.errors.count, "error") %> prohibited this polling_station from being saved:</h2>
+
+      <ul>
+      <% polling_station.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sub_sector_id %>
+    <%= f.text_field :sub_sector_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :num_pollstat %>
+    <%= f.text_field :num_pollstat %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sector: one
+  num_sub_sector: MyString
+  name: MyString
+
+two:
+  sector: two
+  num_sub_sector: MyString
+  name: MyString

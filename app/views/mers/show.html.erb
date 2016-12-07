@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Polling station:</strong>
+  <%= @mer.polling_station %>
+</p>
+
+<p>
+  <strong>Num mer:</strong>
+  <%= @mer.num_mer %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mer.name %>
+</p>
+
+<%= link_to 'Edit', edit_mer_path(@mer) %> |
+<%= link_to 'Back', mers_path %>

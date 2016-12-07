@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sub_sector: one
+  num_pollstat: MyString
+  name: MyString
+
+two:
+  sub_sector: two
+  num_pollstat: MyString
+  name: MyString

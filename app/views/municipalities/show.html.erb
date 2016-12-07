@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Departamento:</strong>
+  <%= @municipality.department.name %>
+</p>
+
+<p>
+  <strong>Código:</strong>
+  <%= @municipality.num_minicip %>
+</p>
+
+<p>
+  <strong>Municipio:</strong>
+  <%= @municipality.name %>
+</p>
+
+<%= link_to 'Modificar', edit_municipality_path(@municipality, :department => @municipality.department) %> |
+<%= link_to 'Atras', municipalities_path(:department => @municipality.department) %>
